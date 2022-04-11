@@ -10,6 +10,7 @@ function Detail() {
     ).json();
     setImage(json.data.movie.large_cover_image);
   };
+
   useEffect(() => {
     getMovies();
   }, []);
